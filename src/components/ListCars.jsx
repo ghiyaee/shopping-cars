@@ -1,11 +1,21 @@
+import { useState,useEffect } from "react";
 import data from "../data";
 import '../styles/list.css'
 const ListCars = ({ card, handelChange, setCart }) => {
+    const [price,setPrice]=useState(0)
     const deleteHandel = (e) => {
         const arr = card.filter(f => f.id != e)
         setCart(arr)
- }
+    }
+    const totalHandel = () => {
+       let many = 0;
+        card.map(i => (many += i.conter * i.price))
+        setPrice(many)
+    }
 
+    useEffect(() => {
+        totalHandel()
+    })
   const render = card.map((card) => {
     return (
       <div key={card.id} className="list__container">
@@ -28,11 +38,20 @@ const ListCars = ({ card, handelChange, setCart }) => {
           </div>
         </div>
         <span className="line"></span>
-      </div>
+        </div>
+        
     );
   });
 
-  return <>{render}</>;
+    return (
+      <>
+        {render}
+        <div className="total">
+          <span>Total Price of your Cart</span>
+          <span>$ - {price}</span>
+        </div>
+      </>
+    );
 };
 
 export default ListCars;
