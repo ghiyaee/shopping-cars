@@ -21,11 +21,9 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+  cursor: pointer;
 }
-.nav__basket{
-    /* display: flex;
-    align-items: center; */
-}
+
 .nav__basket :nth-child(1) {
   font-size: 1.5rem;
   font-weight: bold;

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    width:90%;
+    margin: auto;
+    justify-content: center;
+}
+.cards{
+  margin: 15px; 
+}
+.cards:hover{
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.img_box img{
+ width: 250px;
+}
+.details :nth-child(1){
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.details :nth-child(2){
+    font-size: 1.1rem;
+    color: rgb(39, 146, 141);
+    font-weight: bold;
+}
+.details :nth-child(3){
+    color: tomato;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.details button{
+    background:lightseagreen ;
+    border: none;
+    padding: 6px;
+    border-radius: 1px;
+    color: white;
+    font-weight: bold;
+}
