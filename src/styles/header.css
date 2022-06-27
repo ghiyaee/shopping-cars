@@ -16,6 +16,10 @@
   line-height: 60px;
   align-items: center;
 }
+.icon{
+  margin-right: 10px;
+}
+
 .nav__logo {
   font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.5rem;
