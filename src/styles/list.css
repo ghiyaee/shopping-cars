@@ -1,52 +1,87 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.list{
-     min-width: 100%;
-     display: flex;
-     padding: 5px;
-     align-items: center;
-     justify-content:space-between;
+.list {
+  min-width: 100%;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-between;
 }
-.list__box img{
-    width: 100px;
+.list__box img {
+  width: 100px;
 }
-.list__details{
-   
-margin-left: 10px;
+.list__details {
+  margin-left: 10px;
 }
-.row__buttom{
-   display: flex; 
-   align-items: center;
-   cursor: pointer;
-   margin-left: 10px;
+.list__details :nth-child(1) {
+  font-weight: bold;
 }
-.row__buttom  span{
+.list__details :nth-child(2) {
+  color: lightseagreen;
+  font-weight: bold;
+}
+.list__details :nth-child(3) {
+  color: tomato;
+  font-weight: bold;
+}
+.row__buttom {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.row__buttom span {
   margin: 2px;
   width: 25px;
   height: 25px;
   border: 2px solid red;
- display: flex;
- justify-content: center;
- align-items: center;
- font-size: 1.2rem;
- font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-.row__buttom :nth-child(4){
-    color: rgb(241, 54, 54);
-   border: none;
+.row__buttom :nth-child(4) {
+  color: rgb(241, 54, 54);
+  border: none;
 }
-.line{
-    display: block;
-    border-top: 2px solid  rgb(141, 194, 191);
-   width: 99%;
-   margin: auto;
-
+.line {
+  display: block;
+  border-top: 2px solid rgb(141, 194, 191);
+  width: 99%;
+  margin: auto;
 }
-.total{
-    display: flex;
+.total {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.total :nth-child(2) {
+  font-size: 1.3rem;
+}
+@media (min-width: 768px) {
+  .list {
     justify-content: space-around;
-    margin-top: 20px;
+  }
+  .list__details {
+    display: flex;
+  }
+  .list__details p {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  .list__details :nth-child(1) {
+    font-size: 1.6rem;
+  }
+  .list__details :nth-child(2) {
+     font-size: 1.6rem;
+  }
+  .list__details :nth-child(3) {
+      font-size: 1.6rem;
+  }
 }
