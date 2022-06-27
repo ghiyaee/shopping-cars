@@ -5,7 +5,8 @@ const data = [
          model: 2022,
          price: 50000,
          color: 'black',
-         img: 'https://cdn.motor1.com/images/mgl/Oovj9l/s1/2022-mercedes-amg-gt-63-63-s-4-door-coupe.jpg'
+        img: 'https://cdn.motor1.com/images/mgl/Oovj9l/s1/2022-mercedes-amg-gt-63-63-s-4-door-coupe.jpg',
+         conter:1
     },
         {
             id: 2,
@@ -13,7 +14,8 @@ const data = [
             model: 2022,
             price: 45000,
             color: 'black',
-            img: 'https://cdn.motor1.com/images/mgl/0eeJ2W/s1/2023-toyota-supra-with-manual-gearbox-europe.jpg'
+            img: 'https://cdn.motor1.com/images/mgl/0eeJ2W/s1/2023-toyota-supra-with-manual-gearbox-europe.jpg',
+            conter:1
     },
         {
             id: 3,
@@ -21,7 +23,9 @@ const data = [
                 model: 2022,
                 price: 60000,
                 color: 'black',
-                img: 'https://cdn.motor1.com/images/mgl/nAX3Nk/s1/2022-bmw-m240i-exterior-review.jpg'
+            img: 'https://cdn.motor1.com/images/mgl/nAX3Nk/s1/2022-bmw-m240i-exterior-review.jpg',
+            conter:1
+                
     },
     {
           id: 4,
@@ -29,7 +33,8 @@ const data = [
               model: 2022,
               price: 100000,
               color: 'black',
-              img: 'https://cdn.motor1.com/images/mgl/ZnnOg2/s1/singer-vehicle-design-turbo-study-side.jpg'
+        img: 'https://cdn.motor1.com/images/mgl/ZnnOg2/s1/singer-vehicle-design-turbo-study-side.jpg',
+              conter:1
     },
     {
       id: 5,
@@ -37,7 +42,8 @@ const data = [
           model: 2022,
           price: 90000,
           color: 'black',
-          img: 'https://cdn.motor1.com/images/mgl/QeeNPB/s4/peugeot-408-live-pictures.webp'
+        img: 'https://cdn.motor1.com/images/mgl/QeeNPB/s4/peugeot-408-live-pictures.webp',
+          conter:1
     }    
 ]
 export default data

@@ -32,11 +32,13 @@
 
 .nav__basket :nth-child(2) {
   position: relative;
-  top: -10px;
+  top:-10px;
   font-size: 1.5rem;
   background-color: white;
   color: lightseagreen;
   border-radius: 50%;
   padding: 1.5px;
   font-weight: bold;
+  padding: 3px;
+ 
 }

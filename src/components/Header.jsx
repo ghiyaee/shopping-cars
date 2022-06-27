@@ -1,5 +1,5 @@
 import '../styles/header.css'
-const Header = ({setShow}) => {
+const Header = ({setShow,basket}) => {
     return (
       <nav className="nav__container">
         <div className="nav__box">
@@ -10,7 +10,7 @@ const Header = ({setShow}) => {
             <span>
               <i className="fa-solid fa-cart-arrow-down"></i>
             </span>
-            <span>10</span>
+            <span>{basket}</span>
           </div>
         </div>
       </nav>

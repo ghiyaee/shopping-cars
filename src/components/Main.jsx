@@ -4,7 +4,6 @@ import data from "../data";
 import Card from "./Card";
 import "../styles/main.css";
 const Main = ({addHandel}) => {
-
     return (
       <section>
         {data.map((car) => (
