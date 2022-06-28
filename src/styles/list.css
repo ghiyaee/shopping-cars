@@ -9,6 +9,11 @@
   padding: 5px;
   align-items: center;
   justify-content: space-between;
+  margin: 10px;
+}
+.list:hover{
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
 }
 .list__box img {
   width: 100px;
@@ -57,9 +62,12 @@
 .total {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
   font-weight: bold;
   font-size: 1.2rem;
+  box-shadow: 0 10px 10px 10px rgba(141,194,191,0.1);
+  width: 90%;
+ margin: 40px auto;
+ padding: 30px;
 }
 .total :nth-child(2) {
   font-size: 1.3rem;
