@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .list {
-  min-width: 100%;
+  min-width: 90%;
   display: flex;
   padding: 5px;
   align-items: center;
@@ -64,19 +64,18 @@
   display: flex;
   justify-content: space-around;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   box-shadow: 0 10px 10px 10px rgba(141,194,191,0.1);
   width: 90%;
  margin: 40px auto;
  padding: 30px;
+ align-items: center;
 }
+
 .total :nth-child(2) {
   font-size: 1.3rem;
 }
 @media (min-width: 768px) {
-  .list {
-    /* justify-content: space-around; */
-  }
   .list__details {
     display: flex;
   }
@@ -92,5 +91,8 @@
   }
   .list__details :nth-child(3) {
       font-size: 1.6rem;
+  }
+  .total :nth-child(1){
+    font-size: 1.5rem;
   }
 }

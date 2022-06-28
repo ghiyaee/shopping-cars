@@ -47,8 +47,8 @@ const ListCars = ({ card, handelChange, setCart }) => {
       <>
         {render}
         <div className="total">
-          <span>Total Price of your Cart</span>
-          <span>$ - {price}</span>
+          <span>Total Price of your Cart :</span>
+          <span>$  {price}</span>
         </div>
       </>
     );
