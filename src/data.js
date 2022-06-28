@@ -44,6 +44,69 @@ const data = [
           color: 'black',
         img: 'https://cdn.motor1.com/images/mgl/QeeNPB/s4/peugeot-408-live-pictures.webp',
           conter:1
-    }    
+    },
+      {
+          id: 6,
+          brand: 'RENAULT',
+          model: 2022,
+          price: 90000,
+          color: 'black',
+          img: 'https://cdn.motor1.com/images/mgl/Mkkm8w/s1/renault-austral-at-2022-sofia-motor-show.jpg',
+          conter: 1
+    },
+       {
+           id:7,
+           brand: 'NISSAN',
+           model: 2022,
+           price: 90000,
+           color: 'black',
+           img: 'https://cdn.motor1.com/images/mgl/GBx91/s1/2014-476296-nissan-pulsar-nismo-rs-render1.jpg',
+           conter: 1
+    },
+        {
+            id: 8,
+            brand: 'FORD',
+            model: 2022,
+            price: 90000,
+            color: 'black',
+            img: 'https://cdn.motor1.com/images/mgl/BXXeYZ/s4/2022-ford-f-150-lightning.webp',
+            conter: 1
+    },
+          {
+              id: 9,
+              brand: 'FORD',
+              model: 2022,
+              price: 90000,
+              color: 'black',
+              img: 'https://cdn.motor1.com/images/mgl/BXXeYZ/s4/2022-ford-f-150-lightning.webp',
+              conter: 1
+    },
+           {
+               id: 10,
+               brand: 'HYUNDAI',
+               model: 2022,
+               price: 90000,
+               color: 'black',
+               img: 'https://cdn.motor1.com/images/mgl/nO3Zk/s4/2022-hyundai-sonata-n-line-night-edition-front-corner.webp',
+               conter: 1
+    },
+           {
+               id: 11,
+               brand: 'KIA',
+               model: 2022,
+               price: 90000,
+               color: 'black',
+               img: 'https://cdn.motor1.com/images/mgl/2NNArE/s1/2023-kia-soul.jpg',
+               conter: 1
+           },
+           {
+               id: 12,
+               brand: 'BENZ',
+               model: 2022,
+               price: 90000,
+               color: 'black',
+               img: 'https://cdn.motor1.com/images/mgl/jKLxo/s1/mercedes-b-class-2019.jpg',
+               conter: 1
+           },
 ]
 export default data
