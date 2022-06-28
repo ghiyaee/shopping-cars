@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import ListCars from "./components/ListCars";
+import Footer from "./components/Footer";
 const App = () => {
     const [show, setShow] = useState(true)
     const [card, setCart] = useState([]);
@@ -23,6 +24,7 @@ const App = () => {
             <>
                 <Header setShow={setShow} basket={ basket} />
                 {show ? <Main addHandel={addHandel} /> : <ListCars card={card} setCart={setCart} handelChange={handelChange} />}
+                 <Footer/>
             </>
         )
     
