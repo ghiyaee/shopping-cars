@@ -36,7 +36,8 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin-left: 10px;
+ 
+
 }
 .row__buttom span {
   margin: 2px;
@@ -56,7 +57,7 @@
 .line {
   display: block;
   border-top: 2px solid rgb(141, 194, 191);
-  width: 99%;
+  width: 95%;
   margin: auto;
 }
 .total {
@@ -74,7 +75,7 @@
 }
 @media (min-width: 768px) {
   .list {
-    justify-content: space-around;
+    /* justify-content: space-around; */
   }
   .list__details {
     display: flex;
