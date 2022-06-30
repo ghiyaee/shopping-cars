@@ -42,8 +42,8 @@ const App = () => {
             <>
                 {scroll &&(<i className="fa-solid fa-angle-up scroll__up" onClick={scrollUp}></i>) }
                 <Header setShow={setShow} basket={ basket} />
-                {show ? <Main addHandel={addHandel} /> : <ListCars card={card} setCart={setCart} handelChange={handelChange} />}
-                <Footer screenTop={scrollUp } />
+                {show ? <Main addHandel={addHandel} /> : <ListCars card={card} setCart={setCart} handelChange={handelChange} setBasket={setBasket} basket={basket } />}
+                <Footer />
             </>
         )
     

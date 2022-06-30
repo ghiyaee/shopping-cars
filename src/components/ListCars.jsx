@@ -1,21 +1,22 @@
 import { useState,useEffect } from "react";
 import data from "../data";
 import '../styles/list.css'
-const ListCars = ({ card, handelChange, setCart }) => {
-    const [price,setPrice]=useState(0)
-    const deleteHandel = (e) => {
-        const arr = card.filter(f => f.id != e)
-        setCart(arr)
-    }
-    const totalHandel = () => {
-       let many = 0;
-        card.map(i => (many += i.conter * i.price))
-        setPrice(many)
-    }
+const ListCars = ({ card, handelChange, setCart, setBasket,basket }) => {
+  const [price, setPrice] = useState(0);
+  const deleteHandel = (e) => {
+    const arr = card.filter((f) => f.id != e);
+    setCart(arr);
+    setBasket(basket-1)
+  };
+  const totalHandel = () => {
+    let many = 0;
+    card.map((i) => (many += i.conter * i.price));
+    setPrice(many);
+  };
 
-    useEffect(() => {
-        totalHandel()
-    })
+  useEffect(() => {
+    totalHandel();
+  });
   const render = card.map((card) => {
     return (
       <div key={card.id} className="list__container">
@@ -33,25 +34,27 @@ const ListCars = ({ card, handelChange, setCart }) => {
             <span>{card.conter}</span>
             <span onClick={() => handelChange(card, -1)}>-</span>
             <span>
-              <i className="fa-solid fa-trash" onClick={()=>deleteHandel(card.id)}></i>
+              <i
+                className="fa-solid fa-trash"
+                onClick={() => deleteHandel(card.id)}
+              ></i>
             </span>
           </div>
         </div>
         {/* <span className="line"></span> */}
-        </div>
-        
+      </div>
     );
   });
 
-    return (
-      <>
-        {render}
-        <div className="total">
-          <span>Total Price  Cart :</span>
-          <span>$  {price}</span>
-        </div>
-      </>
-    );
+  return (
+    <>
+      {render}
+      <div className="total">
+        <span>Total Price Cart :</span>
+        <span>$ {price}</span>
+      </div>
+    </>
+  );
 };
 
 export default ListCars;
