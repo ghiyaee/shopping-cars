@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import ListCars from "./components/ListCars";
 import Footer from "./components/Footer";
+import "./styles/app.css"
 const App = () => {
     const [scroll,setScroll]=useState(false)
     const [show, setShow] = useState(true)
@@ -39,7 +40,7 @@ const App = () => {
 
         return (
             <>
-                
+                {scroll &&(<i className="fa-solid fa-angle-up scroll__up" onClick={scrollUp}></i>) }
                 <Header setShow={setShow} basket={ basket} />
                 {show ? <Main addHandel={addHandel} /> : <ListCars card={card} setCart={setCart} handelChange={handelChange} />}
                 <Footer screenTop={scrollUp } />
