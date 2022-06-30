@@ -6,17 +6,19 @@
 .nav__container {
   width: 100%;
   background-color: lightseagreen;
-  height: 60px;
+  height: 95px;
   position: sticky;
   top:0;
   z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .nav__box {
   width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  line-height: 60px;
   align-items: center;
 }
 .icon{
@@ -46,3 +48,26 @@
   color:white ;
   font-weight: bold;
 }
+.input{
+ width: 90%;
+display: flex;
+justify-content: space-between;
+}
+ .input input{
+  width: 100%;
+  padding: 6px;
+border: none;
+outline: none;
+margin-bottom: 7px;
+box-shadow: 0 1px 5px 6px rgb(250, 247, 247);
+background:rgb(218, 212, 211);
+color: rgb(34, 17, 17);
+border-radius: 1px;
+font-size: 1rem;
+
+ }
+
+
+
+
+

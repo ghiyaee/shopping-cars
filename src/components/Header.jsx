@@ -1,6 +1,8 @@
-import '../styles/header.css'
-const Header = ({setShow,basket}) => {
-    return (
+import "../styles/header.css";
+import SearchBar from "./SearchBar";
+const Header = ({ setShow, basket ,searchHandel}) => {
+  return (
+    <>
       <nav className="nav__container">
         <div className="nav__box">
           <div className="nav__logo" onClick={() => setShow(true)}>
@@ -14,8 +16,14 @@ const Header = ({setShow,basket}) => {
             <span>{basket}</span>
           </div>
         </div>
+        {/* <SearchBar /> */}
+        <div className="input">
+          <input placeholder="Searchbar" onChange={(e)=> searchHandel(e.target.value)} />
+          {/* <i class="fa-solid fa-magnifying-glass "></i> */}
+        </div>
       </nav>
-    );
-}
- 
+    </>
+  );
+};
+
 export default Header;
