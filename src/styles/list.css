@@ -6,10 +6,10 @@
 .list {
   min-width: 90%;
   display: flex;
-  padding: 5px;
+  padding: 0px;
   align-items: center;
   justify-content: space-between;
-  margin: 10px;
+  margin:5px;
 }
 .list:hover{
     box-shadow: 0 10px 10px 10px rgba(0,0,0,0.1);
@@ -40,19 +40,20 @@
 
 }
 .row__buttom span {
-  margin: 2px;
+  margin: 3px;
   width: 25px;
   height: 25px;
-  border: 2px solid red;
+    box-shadow: 0px 0px 5px 5px rgba(141,194,191,0.1);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
 }
 .row__buttom :nth-child(4) {
   color: rgb(241, 54, 54);
   border: none;
+  box-shadow: 0px 0px 0px 0px rgba(141,194,191,0.1);
 }
 .line {
   display: block;
@@ -94,5 +95,11 @@
   }
   .total :nth-child(1){
     font-size: 1.5rem;
+  }
+  .row__buttom span{
+    font-size: 1.8rem;
+  }
+  .row__buttom :nth-child(4){
+    margin-left: 50px;
   }
 }

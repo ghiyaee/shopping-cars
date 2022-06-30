@@ -30,7 +30,7 @@ const ListCars = ({ card, handelChange, setCart, setBasket,basket }) => {
             <p>$ {card.price}</p>
           </div>
           <div className="row__buttom">
-            <span onClick={() => handelChange(card, 1)}>+ </span>
+            <span onClick={() => handelChange(card, 1)}>+</span>
             <span>{card.conter}</span>
             <span onClick={() => handelChange(card, -1)}>-</span>
             <span>
