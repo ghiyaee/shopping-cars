@@ -41,7 +41,7 @@ const ListCars = ({ card, handelChange, setCart, setBasket,basket }) => {
             </span>
           </div>
         </div>
-        {/* <span className="line"></span> */}
+        <span className="line"></span>
       </div>
     );
   });
