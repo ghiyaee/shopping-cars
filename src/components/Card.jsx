@@ -9,7 +9,8 @@ const Card = ({ cars,addHandel }) => {
                 <p>{cars.brand}</p>
                 <p>{cars.model}</p>
                 <p>$ {cars.price}</p>
-                <button onClick={()=>addHandel(cars)}>ADD TO CART</button>
+                <button onClick={() => addHandel(cars)}>ADD TO CART</button>
+                <p>added</p>
             </div>
         </div>
       );

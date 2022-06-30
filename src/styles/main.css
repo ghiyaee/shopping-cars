@@ -20,6 +20,9 @@ section{
 .img_box img{
  width: 250px;
 }
+.details{
+    position: relative;
+}
 .details :nth-child(1){
     font-size: 1.5rem;
     font-weight: bold;
@@ -34,6 +37,7 @@ section{
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 .details button{
     background:lightseagreen ;
     border: none;
@@ -41,4 +45,11 @@ section{
     border-radius: 1px;
     color: white;
     font-weight: bold;
+ 
+}
+.details :nth-child(5){
+    position: absolute;
+    top:75px;
+    z-index:-1 ;
+    transform: translateX(0px);
 }

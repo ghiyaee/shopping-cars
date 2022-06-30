@@ -4,7 +4,12 @@
    background:lightseagreen ;
    display: flex;
    flex-direction: column;
- 
+    position: relative;
+}
+.footer__up{
+    position: absolute;
+    top:-10px;
+    cursor: pointer;
 }
 .footer__wrapper{
     width: 80%;
