@@ -6,9 +6,6 @@ const Footer = ({ screenTop }) => {
     <>
       <div className="footer__container">
         <div className="footer__wrapper">
-          <div className="footer__up">
-            <i className="fa-solid fa-angle-up" onClick={screenTop}></i>
-          </div>
           <div>
             <p>Contact us :</p>
           </div>
