@@ -10,6 +10,7 @@ const App = () => {
     const [show, setShow] = useState(true)
     const [card, setCart] = useState([]);
     const [basket, setBasket] = useState(0)
+    const [srch,setSrch]=useState([])
     const addHandel = (item) => {
         if (card.indexOf(item) === -1) {
             setCart([...card, item]);
@@ -38,15 +39,19 @@ const App = () => {
             behavior:"smooth"
         })
     }
-//     const searchHandel = (e) => {
-//         let car = data.filter(car => car.brand.includes(e.toUpperCase()))
-//         setCart(car)
-//  }
+    const searchHandel = (e) => {
+        let car = data.filter(car => car.brand.includes(e.toUpperCase()))
+        setSrch(car)
+ }
         return (
             <>
                 {scroll &&(<i className="fa-solid fa-angle-up scroll__up" onClick={scrollUp}></i>) }
-                <Header setShow={setShow} basket={basket} searchHandel={ ''} />
-                {show ? <Main addHandel={addHandel} car={card}  /> : <ListCars card={card} setCart={setCart} handelChange={handelChange} setBasket={setBasket} basket={basket } />}
+                <Header setShow={setShow} basket={basket} searchHandel={ searchHandel} />
+                {show ? <Main addHandel={addHandel} srch={srch} /> :
+                    <ListCars card={card} setCart={setCart}
+                        handelChange={handelChange}
+                        setBasket={setBasket}
+                        basket={basket} />}
                 <Footer />
             </>
         )
