@@ -57,7 +57,7 @@
   font-weight: bold;
 }
 .input{
- width: 90%;
+ width: 70%;
 display: flex;
 justify-content: space-between;
 }
@@ -79,7 +79,14 @@ font-size: 1rem;
 .show{
   display: block;
 }
-
+@media(min-width:700px){
+  .input{
+    position: absolute;
+    top:33px;
+    right:155px;
+    width: 30%;
+  }
+}
 
 
 

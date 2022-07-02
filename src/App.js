@@ -38,14 +38,14 @@ const App = () => {
             behavior:"smooth"
         })
     }
-    const searchHandel = (e) => {
-        let car = data.filter(car => car.brand.includes(e.toUpperCase()))
-        setCart(car)
- }
+//     const searchHandel = (e) => {
+//         let car = data.filter(car => car.brand.includes(e.toUpperCase()))
+//         setCart(car)
+//  }
         return (
             <>
                 {scroll &&(<i className="fa-solid fa-angle-up scroll__up" onClick={scrollUp}></i>) }
-                <Header setShow={setShow} basket={basket} searchHandel={ searchHandel} />
+                <Header setShow={setShow} basket={basket} searchHandel={ ''} />
                 {show ? <Main addHandel={addHandel} car={card}  /> : <ListCars card={card} setCart={setCart} handelChange={handelChange} setBasket={setBasket} basket={basket } />}
                 <Footer />
             </>

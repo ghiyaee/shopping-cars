@@ -4,9 +4,8 @@ import { useState } from "react";
 import { logDOM } from "@testing-library/react";
 const Header = ({ setShow, basket, searchHandel }) => {
   const [searchShow, setSearchShow] = useState(false)
-     console.log(searchShow);
+
   const showHandel = () => {
-    console.log(searchShow);
     if (!searchShow) {
        setSearchShow(true)
     } else {
