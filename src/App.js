@@ -39,16 +39,14 @@ const App = () => {
         })
     }
     const searchHandel = (e) => {
-        const car = data.map(car => {
-          return  car.brand===e
-        })
-        console.log(car);
+        let car = data.filter(car => car.brand.includes(e.toUpperCase()))
+        setCart(car)
  }
         return (
             <>
                 {scroll &&(<i className="fa-solid fa-angle-up scroll__up" onClick={scrollUp}></i>) }
                 <Header setShow={setShow} basket={basket} searchHandel={ searchHandel} />
-                {show ? <Main addHandel={addHandel} /> : <ListCars card={card} setCart={setCart} handelChange={handelChange} setBasket={setBasket} basket={basket } />}
+                {show ? <Main addHandel={addHandel} car={card}  /> : <ListCars card={card} setCart={setCart} handelChange={handelChange} setBasket={setBasket} basket={basket } />}
                 <Footer />
             </>
         )
