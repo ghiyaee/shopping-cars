@@ -14,7 +14,7 @@ const App = () => {
     const addHandel = (item) => {
         if (card.indexOf(item) === -1) {
             setCart([...card, item]);
-            setBasket(basket+1)
+            setBasket(basket + 1)
          }
     }
     const handelChange = (item, d) => {
@@ -46,7 +46,7 @@ const App = () => {
         return (
             <>
                 {scroll &&(<i className="fa-solid fa-angle-up scroll__up" onClick={scrollUp}></i>) }
-                <Header setShow={setShow} basket={basket} searchHandel={ searchHandel} />
+                <Header setShow={setShow} basket={basket} searchHandel={ searchHandel} srch={srch} />
                 {show ? <Main addHandel={addHandel} srch={srch} /> :
                     <ListCars card={card} setCart={setCart}
                         handelChange={handelChange}

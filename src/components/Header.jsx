@@ -7,7 +7,7 @@ const Header = ({ setShow, basket, searchHandel }) => {
 
   const showHandel = () => {
     if (!searchShow) {
-       setSearchShow(true)
+      setSearchShow(true)
     } else {
       setSearchShow(false)
      }
