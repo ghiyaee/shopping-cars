@@ -32,13 +32,24 @@
   color: white;
   cursor: pointer;
 }
-
+.icone{
+  display: flex;
+  align-items: center;
+}
+.icone .icons{
+  margin-right: 20px;
+  color: white;
+}
 .nav__basket :nth-child(1) {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
-}
 
+}
+.nav__basket span{
+
+
+}
 .nav__basket :nth-child(2) {
   position: relative;
   top:-13px;
@@ -64,9 +75,13 @@ background:rgb(218, 212, 211);
 color: rgb(34, 17, 17);
 border-radius: 1px;
 font-size: 1rem;
-
  }
-
+.hiden{
+  display: none;
+}
+.show{
+  display: block;
+}
 
 
 

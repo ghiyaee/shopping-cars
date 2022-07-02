@@ -1,6 +1,19 @@
 import "../styles/header.css";
 import SearchBar from "./SearchBar";
-const Header = ({ setShow, basket ,searchHandel}) => {
+import { useState } from "react";
+import { logDOM } from "@testing-library/react";
+const Header = ({ setShow, basket, searchHandel }) => {
+  const [searchShow, setSearchShow] = useState(false)
+     console.log(searchShow);
+  const showHandel = () => {
+    console.log(searchShow);
+    if (!searchShow) {
+       setSearchShow(true)
+    } else {
+      setSearchShow(false)
+     }
+  }
+  
   return (
     <>
       <nav className="nav__container">
@@ -9,17 +22,28 @@ const Header = ({ setShow, basket ,searchHandel}) => {
             <i className="fa-solid fa-store icon"></i>
             Shopping Cars
           </div>
-          <div className="nav__basket" onClick={() => setShow(false)}>
-            <span>
-              <i className="fa-solid fa-cart-arrow-down"></i>
-            </span>
-            <span>{basket}</span>
+          <div className="icone">
+            <div className="iconSearch">
+              <i
+                className="fa-solid fa-magnifying-glass icons"
+                onClick={showHandel}
+              ></i>
+            </div>
+
+            <div className="nav__basket" onClick={() => setShow(false)}>
+              <span>
+                <i className="fa-solid fa-cart-arrow-down"></i>
+              </span>
+              <span>{basket}</span>
+            </div>
           </div>
         </div>
         {/* <SearchBar /> */}
-        <div className="input">
-          <input placeholder="Searchbar" onChange={(e)=> searchHandel(e.target.value)} />
-          {/* <i class="fa-solid fa-magnifying-glass "></i> */}
+        <div className={`input ${searchShow ? 'show' : 'hiden'} `}>
+          <input
+            placeholder="Searchbar"
+            onChange={(e) => searchHandel(e.target.value)}
+          />
         </div>
       </nav>
     </>
