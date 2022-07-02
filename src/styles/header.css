@@ -15,7 +15,7 @@
   align-items: center;
 }
 .nav__box {
-  width: 80%;
+  width: 89%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@
   align-items: center;
 }
 .icone .icons{
-  margin-right: 20px;
+  margin-right: 10px;
   color: white;
 }
 .nav__basket :nth-child(1) {
@@ -46,10 +46,7 @@
   color: white;
 
 }
-.nav__basket span{
 
-
-}
 .nav__basket :nth-child(2) {
   position: relative;
   top:-13px;
