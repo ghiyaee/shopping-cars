@@ -4,7 +4,6 @@ import data from "../data";
 import Card from "./Card";
 import "../styles/main.css";
 const Main = ({ addHandel, car }) => {
-  console.log(car);
   let list = 0;
   if (car.length) {
     list = car.map((car) => {
@@ -17,5 +16,5 @@ const Main = ({ addHandel, car }) => {
   }
 
   return <section>{list}</section>;
-}
+};
 export default Main;
