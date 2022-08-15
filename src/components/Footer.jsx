@@ -1,5 +1,4 @@
 import { useRef } from "react";
-
 import "../styles/footer.css";
 const Footer = ({ screenTop }) => {
   return (

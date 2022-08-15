@@ -5,7 +5,6 @@
 .slideStyle {
   width: 100%;
   height: 100%;
-  /* border-radius: 1.2rem; */
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -15,17 +14,34 @@
 .arrow-left {
   position: absolute;
   bottom: 2%;
-  left: 10%;
-  color: rgb(216, 213, 213);
+  left: 6%;
+  color: #fff;
   cursor: pointer;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
+   width: 40px;
+  height: 40px;
+  background:  lightseagreen;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
+
 .arrow-right {
   position: absolute;
   bottom: 2%;
-  right: 83%;
-  color: rgb(216, 213, 213);
+  right: 85%;
+  color:#fff;
   cursor: pointer;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  background: lightseagreen;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 
