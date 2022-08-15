@@ -30,12 +30,10 @@ const Slider = ({ img }) => {
     <>
       <div className="wrrap">
         <div className="arrow-left" onClick={goToPerv}>
-                  {/* <i className="fa-solid fa-circle-left"></i> */}
-                  {'<'}
+              {'<'}
         </div>
         <div className="arrow-right" onClick={goToNext}>
-                  {/* <i className="fa-solid fa-circle-right"></i> */}
-                  {'>'}
+              {'>'}
         </div>
         <div className="slideStyle" style={slide}></div>
         <div className="dotStyle">
