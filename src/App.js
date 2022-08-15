@@ -5,6 +5,7 @@ import ListCars from "./components/ListCars";
 import Footer from "./components/Footer";
 import data from "./data";
 import "./styles/app.css"
+import Slider from "./components/Sliser";
 const App = () => {
     const [scroll,setScroll]=useState(false)
     const [show, setShow] = useState(true)
@@ -45,8 +46,12 @@ const App = () => {
  }
         return (
             <>
-                {scroll &&(<i className="fa-solid fa-angle-up scroll__up" onClick={scrollUp}></i>) }
-                <Header setShow={setShow} basket={basket} searchHandel={ searchHandel} srch={srch} />
+                {scroll && (<i className="fa-solid fa-angle-up scroll__up" onClick={scrollUp}></i>)}
+                <Header setShow={setShow} basket={basket} searchHandel={searchHandel} srch={srch} />
+                < div className = "content" >
+
+                <Slider img={data } />
+                </div>
                 {show ? <Main addHandel={addHandel} srch={srch} /> :
                     <ListCars card={card} setCart={setCart}
                         handelChange={handelChange}
