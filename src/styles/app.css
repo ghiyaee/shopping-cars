@@ -29,4 +29,13 @@
     bottom: 50px;
     right: 10px;
   }
+
+}
+@media (max-width:700px){
+      .content {
+  width:300px;
+  height: 400px;
+  margin: 1rem auto;
+
+}
 }

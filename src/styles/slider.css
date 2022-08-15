@@ -18,9 +18,9 @@
   color: #fff;
   cursor: pointer;
   font-size: 1.5rem;
-   width: 40px;
+  width: 40px;
   height: 40px;
-  background:  rgb(26, 153, 147);
+  background: rgb(26, 153, 147);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -32,7 +32,7 @@
   position: absolute;
   bottom: 2%;
   right: 85%;
-  color:#fff;
+  color: #fff;
   cursor: pointer;
   font-size: 1.5rem;
   width: 40px;
@@ -42,6 +42,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
+@media (max-width: 700px) {
+  .arrow-left {
+    top: 258px;
+    font-size: .9rem;
+    width: 20px;
+    height: 20px;
+  }
+  .arrow-right{
+    top: 258px;
+    font-size: .9rem;
+    width: 20px;
+    height: 20px;
+    right: 80%;
+  }
+}
