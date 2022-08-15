@@ -20,7 +20,7 @@
   font-size: 1.5rem;
    width: 40px;
   height: 40px;
-  background:  lightseagreen;
+  background:  rgb(26, 153, 147);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -37,11 +37,11 @@
   font-size: 1.5rem;
   width: 40px;
   height: 40px;
-  background: lightseagreen;
+  background: rgb(26, 153, 147);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
+
 }
 
