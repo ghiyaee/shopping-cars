@@ -43,7 +43,23 @@
   justify-content: center;
   align-items: center;
 }
-
+.dotStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    position: absolute;
+    right: 1.5rem;
+    bottom: 2%;
+}
+.dotSelf{
+    transition: all 0.6s ease-in-out;
+    margin: 5px;
+    font-size: 0.7rem;
+}
+.color{
+    color:tomato
+}
 @media (max-width: 700px) {
   .arrow-left {
     top: 258px;
