@@ -11,7 +11,7 @@
   top:0;
   z-index: 999;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
 }
 .nav__box {
@@ -57,13 +57,14 @@
   font-weight: bold;
 }
 .input{
- width: 70%;
+ width: 50%;
 display: flex;
 justify-content: space-between;
-
+position: absolute;
+left:20rem;
 }
  .input input{
-  width: 100%;
+  width: 60%;
   padding: 6px;
 border: none;
 outline: none;
@@ -80,12 +81,55 @@ font-size: 1rem;
 .show{
   display: block;
 }
+.iconSearch{
+  position: absolute;
+  right:12.9rem;
+  top:7.5px
+}
+.list__cars{
+  position: absolute;
+  right: 12rem;
+  cursor: pointer;
+  color: #FFF;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.list__cars h2{
+  margin-left: 0px;
+}
+.list-cars{
+  position:absolute;
+  right:5rem;
+  top:7rem; 
+}
+.list-cars ul{
+   list-style: none;
+   border: 3px solid #eee;
+}
+.list-cars li {
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all .6s ease-in-out;
+  font-weight: bold;
+}
+.list-cars li:hover{
+  background: rgba(230, 229, 229,0.5);
+  color: rgb(231, 47, 14);
+}
 @media(min-width:700px){
   .input{
     position: absolute;
     top:33px;
     right:180px;
     width: 30%;
+  }
+}
+@media(max-width:700px){
+  .list__cars{
+    display: none;
   }
 }
 
