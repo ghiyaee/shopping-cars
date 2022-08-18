@@ -6,13 +6,13 @@
 .list {
   min-width: 90%;
   display: flex;
-  padding: 0px;
+  padding: 30px;
   align-items: center;
-  justify-content: space-between;
-  margin:5px;
+  justify-content:space-between;
+  margin:15px;
 }
 .list:hover{
-    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.1);
+    box-shadow:5px 5px 5px 5px rgba(39, 146, 141,0.1);
     cursor: pointer;
 }
 .list__box img {
@@ -66,15 +66,23 @@
   justify-content: space-around;
   font-weight: bold;
   font-size: 1rem;
-  box-shadow: 0 10px 10px 10px rgba(141,194,191,0.1);
+  box-shadow: 5px 5px 5px 5px rgba(39, 146, 141,0.1);
   width: 90%;
  margin: 40px auto;
  padding: 30px;
  align-items: center;
 }
 
-.total :nth-child(2) {
-  font-size: 1rem;
+.total div :nth-child(2) {
+  font-size: 2.2rem;
+}
+.total button  {
+ background: tomato;
+ font-size: 2.2rem;
+ border: none;
+ padding: 1rem 2rem;
+ border-radius: 7px;
+   cursor: pointer;
 }
 @media (min-width: 768px) {
   .list__details {

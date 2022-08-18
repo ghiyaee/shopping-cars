@@ -50,8 +50,11 @@ const ListCars = ({ card, handelChange, setCart, setBasket,basket }) => {
     <>
       {render}
       <div className="total">
-        <span>Total Price Cart :</span>
-        <span>$ {price}</span>
+        <div>
+          <span>{`Total Price Items ${basket}: `}</span>
+          <span>$ {price}</span>
+        </div>
+        <button>Finalize the order</button>
       </div>
     </>
   );

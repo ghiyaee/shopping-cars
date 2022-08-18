@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar";
 import { useState,useEffect } from "react";
 const Header = ({ setShow, basket, searchHandel }) => {
   const [searchShow, setSearchShow] = useState(true)
-  const[list,setList]=useState(false)
+  const[list,setList]=useState(true)
   const showHandel = () => {
     if (!searchShow) {
       setSearchShow(true)
