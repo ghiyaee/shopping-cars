@@ -4,6 +4,7 @@
    background:lightseagreen ;
    display: flex;
    flex-direction: column;
+   margin-top: 2.2rem;
 }
 .footer__wrapper{
     width: 80%;

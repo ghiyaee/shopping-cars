@@ -6,7 +6,7 @@
 .nav__container {
   width: 100%;
   background-color: lightseagreen;
-  height: 95px;
+  height: 195px;
   position: sticky;
   top:0;
   z-index: 999;
@@ -44,7 +44,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
-
+   cursor: pointer;
 }
 
 .nav__basket :nth-child(2) {
@@ -102,12 +102,14 @@ font-size: 1rem;
 }
 .list-cars{
   position:absolute;
-  right:5rem;
-  top:7rem; 
+  right:11.7rem;
+  top:7.5rem; 
 }
 .list-cars ul{
    list-style: none;
    border: 3px solid #eee;
+   display: flex;
+   background: #FFF;
 }
 .list-cars li {
   padding: 1.5rem;
@@ -128,9 +130,10 @@ font-size: 1rem;
   }
 }
 @media(max-width:700px){
-  .list__cars{
+  .list__cars,.iconSearch{
     display: none;
   }
+  
 }
 
 

@@ -24,6 +24,9 @@
   margin: 1rem auto;
 
 }
+.hiden{
+  height: 0;
+}
 @media (min-width: 768px) {
   .scroll__up {
     bottom: 50px;

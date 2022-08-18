@@ -1,7 +1,6 @@
 import "../styles/header.css";
 import SearchBar from "./SearchBar";
 import { useState,useEffect } from "react";
-import { logDOM } from "@testing-library/react";
 const Header = ({ setShow, basket, searchHandel }) => {
   const [searchShow, setSearchShow] = useState(true)
   const[list,setList]=useState(false)
@@ -36,7 +35,7 @@ const Header = ({ setShow, basket, searchHandel }) => {
           </div>
 
           <div className="icone">
-            <div className="nav__basket" onClick={() => listHandel()}>
+            <div className="nav__basket" onClick={() => setShow(false)}>
               <span>
                 <i className="fa-solid fa-cart-arrow-down"></i>
               </span>
@@ -45,7 +44,7 @@ const Header = ({ setShow, basket, searchHandel }) => {
           </div>
         </div>
         {/* <SearchBar /> */}
-        <div className={`input ${searchShow ? "show" : "hiden"} `}>
+        {/* <div className={`input ${searchShow ? "show" : "hiden"} `}>
           <input
             placeholder="Searchbar"
             onChange={(e) => searchHandel(e.target.value)}
@@ -53,7 +52,7 @@ const Header = ({ setShow, basket, searchHandel }) => {
           <div className="iconSearch">
             <i className="fa-solid fa-magnifying-glass icons" onClick={""}></i>
           </div>
-        </div>
+        </div> */}
         <span className="list__cars" onClick={() => listHandel()}>
           <i className="fa-solid fa-list-ul "></i>
           <h2>Cars</h2>

@@ -43,14 +43,15 @@ const App = () => {
     const searchHandel = (e) => {
         let car = data.filter(car => car.brand.includes(e.toUpperCase()))
         setSrch(car)
- }
+    }
+ 
+   
         return (
             <>
                 {scroll && (<i className="fa-solid fa-angle-up scroll__up" onClick={scrollUp}></i>)}
                 <Header setShow={setShow} basket={basket} searchHandel={searchHandel} srch={srch} />
-                < div className = "content" >
-
-                <Slider img={data } />
+                < div className = {`content ${!show? 'hiden':''}`} >
+                  {!show === false ?<Slider img={data } />: '' }  
                 </div>
                 {show ? <Main addHandel={addHandel} srch={srch} /> :
                     <ListCars card={card} setCart={setCart}

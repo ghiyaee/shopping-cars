@@ -13,16 +13,21 @@ section{
 }
 .cards{
   margin: 15px; 
+  padding: 2rem;
+  transition: all 0.7s;
+  border-radius: 10px;
 }
 .cards:hover{
-    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 10px 5px rgba(39, 146, 141,0.3);
     cursor: pointer;
+     transform: scale(1.3);
 }
 .img_box img{
  width: 250px;
 }
 .details{
     position: relative;
+    
 }
 .details :nth-child(1){
     font-size: 1.5rem;
