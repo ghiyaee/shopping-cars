@@ -54,7 +54,9 @@ const ListCars = ({ card, handelChange, setCart, setBasket,basket }) => {
           <span>{`Total Price Items ${basket}: `}</span>
           <span>$ {price}</span>
         </div>
-        <button>Finalize the order</button>
+        <button className={`${price === 0 ? "hiden" : "show"}  `}>
+          Finalize the order
+        </button>
       </div>
     </>
   );

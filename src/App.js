@@ -40,16 +40,34 @@ const App = () => {
             behavior:"smooth"
         })
     }
-    const searchHandel = (e) => {
+    const filter_car_Handel = (e) => {
         let car = data.filter(car => car.brand.includes(e.toUpperCase()))
         setSrch(car)
     }
- 
+   const filter_cars_Handel = (e) => {
+       let car = data.filter(car => !car.brand.includes(e.toUpperCase()))
+       setSrch(car)
+   }
    
         return (
             <>
                 {scroll && (<i className="fa-solid fa-angle-up scroll__up" onClick={scrollUp}></i>)}
-                <Header setShow={setShow} basket={basket} searchHandel={searchHandel} srch={srch} />
+                < Header setShow = {
+                    setShow
+                }
+                basket = {
+                    basket
+                }
+                filter_car_Handel = {
+                    filter_car_Handel
+                }
+                srch = {
+                    srch
+                }
+                filter_cars_Handel = {
+                    filter_cars_Handel
+                }
+                />
                 < div className = {`content ${!show? 'hiden':''}`} >
                   {!show === false ?<Slider img={data } />: '' }  
                 </div>

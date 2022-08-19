@@ -1,28 +1,28 @@
 import "../styles/header.css";
 import SearchBar from "./SearchBar";
-import { useState,useEffect } from "react";
-const Header = ({ setShow, basket, searchHandel }) => {
-  const [searchShow, setSearchShow] = useState(true)
-  const[list,setList]=useState(true)
+import { useState, useEffect } from "react";
+const Header = ({ setShow, basket, filter_car_Handel, filter_cars_Handel }) => {
+  const [searchShow, setSearchShow] = useState(true);
+  const [list, setList] = useState(false);
   const showHandel = () => {
     if (!searchShow) {
-      setSearchShow(true)
+      setSearchShow(true);
     } else {
-      setSearchShow(false)
-     }
-  }
-    const listHandel = () => {
-      if (!list) {
-        setList(true);
-      } else {
-        setList(false);
-      }
-    };
+      setSearchShow(false);
+    }
+  };
+  const listHandel = () => {
+    if (!list) {
+      setList(true);
+    } else {
+      setList(false);
+    }
+  };
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 50) {
         setList(false);
-      } 
+      }
     });
   }, []);
   return (
@@ -59,15 +59,36 @@ const Header = ({ setShow, basket, searchHandel }) => {
         </span>
         <div className={`list-cars ${list ? "show" : "hiden"}`}>
           <ul>
-            <li>BENZ</li>
-            <li>FORD</li>
-            <li>BMW</li>
-            <li>NISSAN</li>
-            <li>TOYOTA</li>
-            <li>KIA</li>
-            <li>HYUNDAI</li>
-            <li>PORSCHE</li>
-            <li>RENAULT</li>
+            <li onClick={(e) => filter_car_Handel(e.target.textContent)}>
+              BENZ
+            </li>
+            <li onClick={(e) => filter_car_Handel(e.target.textContent)}>
+              FORD
+            </li>
+            <li onClick={(e) => filter_car_Handel(e.target.textContent)}>
+              BMW
+            </li>
+            <li onClick={(e) => filter_car_Handel(e.target.textContent)}>
+              NISSAN
+            </li>
+            <li onClick={(e) => filter_car_Handel(e.target.textContent)}>
+              TOYOTA
+            </li>
+            <li onClick={(e) => filter_car_Handel(e.target.textContent)}>
+              KIA
+            </li>
+            <li onClick={(e) => filter_car_Handel(e.target.textContent)}>
+              HYUNDAI
+            </li>
+            <li onClick={(e) => filter_car_Handel(e.target.textContent)}>
+              PORSCHE
+            </li>
+            <li onClick={(e) => filter_car_Handel(e.target.textContent)}>
+              RENAULT
+            </li>
+            <li onClick={(e) => filter_cars_Handel(e.target.textContent)}>
+              <i className="fa-solid fa-arrow-rotate-left"></i>
+            </li>
           </ul>
         </div>
       </nav>

@@ -84,6 +84,12 @@
  border-radius: 7px;
    cursor: pointer;
 }
+.show{
+  display: block;
+}
+.hiden{
+  display: none;
+}
 @media (min-width: 768px) {
   .list__details {
     display: flex;
@@ -110,4 +116,14 @@
   .row__buttom :nth-child(4){
     margin-left: 50px;
   }
+}
+@media (max-width:700px){
+  .total button  {
+
+ font-size: 1.2rem;
+ padding: 0.1rem 0.3rem;
+}
+.total div :nth-child(2) {
+  font-size: 1.2rem;
+}
 }

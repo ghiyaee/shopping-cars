@@ -88,7 +88,7 @@ font-size: 1rem;
 }
 .list__cars{
   position: absolute;
-  right: 12rem;
+  right: 12.5rem;
   cursor: pointer;
   color: #FFF;
   font-weight: bold;
@@ -102,9 +102,10 @@ font-size: 1rem;
 }
 .list-cars{
   position:absolute;
-  right:22.8rem;
+  right:20.8rem;
   top:2.5rem; 
 }
+
 .list-cars ul{
    list-style: none;
    border: 3px solid #eee;
