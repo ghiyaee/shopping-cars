@@ -88,9 +88,9 @@ font-size: 1rem;
 }
 .list__cars{
   position: absolute;
-  right: 12.5rem;
+  right: 10.5rem;
   cursor: pointer;
-  color: #FFF;
+  color: rgb(156, 250, 5);
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -110,7 +110,8 @@ font-size: 1rem;
    list-style: none;
    border: 3px solid #eee;
    display: flex;
-   background: #FFF;
+   background: rgba(209, 212, 165, 0.9);
+   border-radius: 3px;
 }
 .list-cars li {
   padding: 1.5rem;
@@ -119,7 +120,7 @@ font-size: 1rem;
   font-weight: bold;
 }
 .list-cars li:hover{
-  background: rgba(230, 229, 229,0.5);
+  background: rgba(241, 237, 169, 0.9);
   color: rgb(231, 47, 14);
 }
 @media(min-width:700px){
