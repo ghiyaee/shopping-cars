@@ -18,11 +18,7 @@ const Main = ({ addHandel, srch }) => {
 
   return (
     <section>
-      {/* {data.map((car) => (
-        <Card key={car.id} cars={car} addHandel={addHandel} />
-      ))} */}
       {list}
-   
     </section>
   );
 };

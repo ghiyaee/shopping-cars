@@ -45,21 +45,9 @@ const Header = ({ setShow, basket, filter_car_Handel, filter_cars_Handel }) => {
             </div>
           </div>
         </div>
-        {/* <SearchBar /> */}
-        {/* <div className={`input ${searchShow ? "show" : "hiden"} `}>
-          <input
-            placeholder="Searchbar"
-            onChange={(e) => searchHandel(e.target.value)}
-          />
-          <div className="iconSearch">
-            <i className="fa-solid fa-magnifying-glass icons" onClick={""}></i>
-          </div>
-        </div> */}
         <span className="list__cars" onClick={() => listHandel()}>
-          {/* <i class="fa-solid fa-list-ol"></i> */}
           <h2>ListCars</h2>
         </span>
-        {/* //${list ? "show" : "hiden"} */}
         <div className={`list-cars ${list ? 'show' : hiden} `}>
           <ul>
             <li onClick={(e) => filter_car_Handel(e.target.textContent)}>

@@ -9,7 +9,6 @@
   background-size: contain;
   background-repeat: no-repeat;
   transition: all 0.6s ease-in-out;
-  /* cursor: pointer; */
 }
 .arrow-left {
   position: absolute;

@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-// import Shopping from "./Shopping"
 import "../styles/slider.css";
 const Slider = ({ img }) => {
   let [imgCurrent, setImag] = useState(0);
@@ -39,8 +38,7 @@ const Slider = ({ img }) => {
           {img.map((item, ind) => (
             <div
               key={ind}
-              className={`dotSelf ${ind === imgCurrent ? dot : ""}`}
-            >
+              className={`dotSelf ${ind === imgCurrent ? dot : ""}`}>
               <i className="fa-solid fa-circle"></i>
             </div>
           ))}
