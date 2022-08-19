@@ -55,7 +55,7 @@ const Header = ({ setShow, basket, filter_car_Handel, filter_cars_Handel }) => {
         </div> */}
         <span className="list__cars" onClick={() => listHandel()}>
           <i className="fa-solid fa-list-ul "></i>
-          <h2>Cars</h2>
+          <h2>ListCars</h2>
         </span>
         <div className={`list-cars ${list ? "show" : "hiden"}`}>
           <ul>
