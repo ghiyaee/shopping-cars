@@ -25,6 +25,8 @@ const Header = ({ setShow, basket, filter_car_Handel, filter_cars_Handel }) => {
       }
     });
   }, []);
+  const hiden = { transform: ' translateY(-120px)' }
+
   return (
     <>
       <nav className="nav__container">
@@ -54,10 +56,11 @@ const Header = ({ setShow, basket, filter_car_Handel, filter_cars_Handel }) => {
           </div>
         </div> */}
         <span className="list__cars" onClick={() => listHandel()}>
-          <i class="fa-solid fa-list-ol"></i>
+          {/* <i class="fa-solid fa-list-ol"></i> */}
           <h2>ListCars</h2>
         </span>
-        <div className={`list-cars ${list ? "show" : "hiden"}`}>
+        {/* //${list ? "show" : "hiden"} */}
+        <div className={`list-cars ${list ? 'show' : hiden} `}>
           <ul>
             <li onClick={(e) => filter_car_Handel(e.target.textContent)}>
               BENZ
